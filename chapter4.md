@@ -23,8 +23,9 @@ clf = clf.fit(wine.data, wine.target)
 dot_data = StringIO()
 tree.export_graphviz(clf, out_file=dot_data)
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
-graph.write_pdf("wine_gini.pdf")
+graph.write_png("wine_gini.png")
 ```
+![wine_gini.png](./pictures/wine_gini.png)
 
 ```python3
 from sklearn.datasets import load_wine
@@ -42,6 +43,8 @@ graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
 graph.write_pdf("wine_entropy.pdf")
 ```
 
+![wine_entropy.png](./pictures/wine_entropy.png)
+
 ```python3
 from sklearn.datasets import load_wine
 from sklearn import tree
@@ -57,3 +60,4 @@ tree.export_graphviz(clf, out_file=dot_data)
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
 graph.write_pdf("wine_entropy_maxdepth=2.pdf")
 ```
+![wine_entropy_maxdepth=2.png](./pictures/wine_entropy_maxdepth=2.png)
