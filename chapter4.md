@@ -1,6 +1,6 @@
-1. 针对 Wine Quality Data Set 数据集，使用决策树（Hint: DecisionTreeClassifier）进行分类。有兴趣的同学可以尝试把决策树进行可视化(Hint: 使用sklearn.tree.export_graphviz)。
+### 1. 针对 Wine Quality Data Set 数据集，使用决策树（Hint: DecisionTreeClassifier）进行分类。有兴趣的同学可以尝试把决策树进行可视化(Hint: 使用sklearn.tree.export_graphviz)。
 
-2. 使用不同的划分准则及不同的max_depth进行实验并记录，观察效果。
+### 2. 使用不同的划分准则及不同的max_depth进行实验并记录，观察效果。
 
 notes
 
